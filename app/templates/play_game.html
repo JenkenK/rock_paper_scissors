@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
-    <title>Rock, Paper, Scissors App</title>
+    <title>Play Game</title>
 </head>
 <body>
     {% extends 'base.html' %}
@@ -12,7 +12,7 @@
     {% block content %}
         <h2>Play Game!</h2>
 
-        <form action="/game" method="POST">
+        <form action="/play-game" method="POST">
             <h3>Player 1:</h3>
             <label for="player_1_name">Name:</label>
             <input required type="text" name="player_1_name" id="player_1_name">

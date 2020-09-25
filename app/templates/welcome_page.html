@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/welcome_page.css')}}">
     <title>Welcome Page</title>
 </head>
 <body>
     {% extends 'base.html' %}
 
     {% block content %}
-        <h1>Welcome Page</h1>
-        <h2>Rules:</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae pariatur vel laudantium recusandae fugit nulla rerum labore repellat neque, aperiam itaque culpa ipsa deserunt, ducimus debitis! Voluptatem delectus deleniti veniam.</p>
+        <h1>Welcome to Rock, Paper, Scissors!</h1>
+        <h2>The Legendary</h2>
+        <span id="rock-emoji">&#128074;</span>
+        <h3>Rock</h3>
+        <span id="paper-emoji">&#128400;</span>
+        <h3>Paper</h3>
+        <span id="scissors-emoji">&#9996;</span>
+        <h3>Scissors</h3>
     {% endblock  %}
 </body>
 </html>
