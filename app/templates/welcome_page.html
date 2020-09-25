@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <title>Welcome Page</title>
 </head>
 <body>
-    <h1>Welcome Page</h1>
+    {% extends 'base.html' %}
+
+    {% block content %}
+        <h1>Welcome Page</h1>
+        <h2>Rules:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae pariatur vel laudantium recusandae fugit nulla rerum labore repellat neque, aperiam itaque culpa ipsa deserunt, ducimus debitis! Voluptatem delectus deleniti veniam.</p>
+    {% endblock  %}
 </body>
 </html>
