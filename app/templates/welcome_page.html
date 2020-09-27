@@ -9,20 +9,22 @@
     {% extends 'base.html' %}
 
     {% block content %}
-        <h1 id="welcome">Welcome to Rock, Paper, Scissors!</h1>
-        <section>
-            <div id="rock">
-                <span id="emoji">&#128074;</span>
-                <h3>Rock</h3>
-            </div>
-            <div id="paper">
-                <span id="emoji">&#128400;</span>
-                <h3>Paper</h3>
-            </div>
-            <div id="scissors">
-                <span id="emoji">&#9996;</span>
-                <h3>Scissors</h3>
-            </div>
+        <section id="welcome-page">
+            <h1 id="welcome-title">Welcome!</h1>
+            <section id="welcome-display">
+                <div id="rock">
+                    <span id="emoji">&#128074;</span>
+                    <h3>Rock</h3>
+                </div>
+                <div id="paper">
+                    <span id="emoji">&#128400;</span>
+                    <h3>Paper</h3>
+                </div>
+                <div id="scissors">
+                    <span id="emoji">&#9996;</span>
+                    <h3>Scissors</h3>
+                </div>
+            </section>
         </section>
     {% endblock  %}
 </body>

@@ -9,19 +9,25 @@
     {% extends 'base.html' %}
 
     {% block content %}
-        <h2>Play Game with Computer!</h2>
+        <h2 id="computer-title">Play Game with Computer!</h2>
 
-        <form action="/play-computer" method="POST">
+        <form action="/play-computer" id="play-form" method="POST">
             <h3>Player {{player_number}}</h3>
-            <label for="player_name">Name:</label>
-            <input required type="text" name="player_name" id="player_name">
+            <div>
+                <label for="player_name">Name:</label>
+                <input required type="text" name="player_name" id="player_name">
+            </div>
+            <br>
+            <div>
             <label for="player_choice">Choice:</label>
-            <select required name="player_choice" id="choice">
-                <option value="" disabled selected>Choice</option>
-                <option value="Rock">Rock</option>
-                <option value="Paper">Paper</option>
-                <option value="Scissors">Scissors</option>
-            </select>
+                <select required name="player_choice" id="choice">
+                    <option value="" disabled selected>Choice</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Paper">Paper</option>
+                    <option value="Scissors">Scissors</option>
+                </select>
+            </div>
+            <br>
 
             <input type="submit" value="Play Game" id="submit-button">
         </form>

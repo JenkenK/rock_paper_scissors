@@ -16,6 +16,8 @@ def play(player_number):
 
 @app.route('/add-player/<player_number>', methods=['POST'])
 def add_player_choice(player_number):
+    if player_number == "1":
+        game.reset_game()
     game.add_player_choice(player_number, Player(name=request.form['player_name'], choice=request.form['player_choice']))
     if game.player_1 != None and game.player_2 != None: 
         game.play()

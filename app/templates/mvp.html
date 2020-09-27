@@ -9,9 +9,11 @@
     {% extends 'base.html' %}
 
     {% block content %}
-        <h1>MVP</h1>
-        <section>To use MVP, write player 1 name then choice followed by player 2 name and choice in route. <br><br> For example:<br>"http://localhost:5000/mvp/player1/rock/player2/paper"</section>
-        {{ game_result }}
+        <div id="mvp-page">
+            <h1>MVP</h1>
+            <section>To use MVP, write player 1 name then choice followed by player 2 name and choice in route. <br><br> For example:<br>"http://localhost:5000/mvp/player1/rock/player2/paper"</section>
+            {{ game_result }}
+        </div>
     {% endblock %}
 </body>
 </html>

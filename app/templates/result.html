@@ -10,22 +10,24 @@
 
     {% block content %}
 
-        <h1>Results:</h1>
-        <section>
-            {% for player in players %}
-            <div class="player">
-                <h2>{{ player.name }}: {{ player.choice }}</h2>
-            </div>
-            {% endfor %}
-        </section>
-
-        <section id ="game_result">
-            {{ game_result }}
-        </section>
-
-        <form action="/reset" method="POST">
-            <input type="submit" value="Reset Game">
-        <form>
+        <h1 id="result-title">Results:</h1>
+        <div id="result"> 
+            <section id="player-choices">
+                {% for player in players %}
+                <div class="player">
+                    <h2>{{ player.name }}: {{ player.choice }}</h2>
+                </div>
+                {% endfor %}
+            </section>
+    
+            <section id="game-result">
+                {{ game_result }}
+            </section>
+    
+            <form action="/reset" method="POST" id="reset-button">
+                <input type="submit" value="Reset Game">
+            <form>
+        </div>
 
     {% endblock  %}
 
