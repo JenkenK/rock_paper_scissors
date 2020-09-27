@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Game</title>
+    <title>Play Computer</title>
 </head>
 <body>
     {% extends 'base.html' %}
@@ -11,7 +11,7 @@
     {% block content %}
         <h2>Play Game with Computer!</h2>
 
-        <form action="/add-player/{{player_number}}" method="POST">
+        <form action="/play-computer" method="POST">
             <h3>Player {{player_number}}</h3>
             <label for="player_name">Name:</label>
             <input required type="text" name="player_name" id="player_name">
@@ -28,7 +28,6 @@
 
     {% endblock  %}
 
-    
     
 </body>
 </html>
